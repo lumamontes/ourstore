@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>Our Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="container">
         <h1> Music <span class="titleDetail"> Store <i class="fas fa-guitar icon"></i> </span></h1>
@@ -23,11 +27,20 @@
     <main class="container">
         <article id="itensList">
             <section class="itemCard ">
-                <figure class="itemImages">
-                    <img src="images/guitar1.jpg" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </figure>
+                <div class="itemImages">
+                    <figure>
+                        <img class="slideImage"src="images/guitar1.jpg" alt="imagem">
+                        <img class="slideImage" src="images/guitar2.jpg" alt="imagem">
+                        <img class="slideImage" src="images/guitar3.jpg" alt="imagem">
+                    </figure>
+
+                    <div class="passButtons">
+                            <i class="fas fa-circle nextButton" onclick="currentSlide(1)"></i>
+                            <i class="fas fa-circle nextButton" onclick="currentSlide(2)"></i>
+                            <i class="fas fa-circle nextButton" onclick="currentSlide(3)"></i>>
+                    </div>
+
+                </div>
                 <div class="itemInfos">
                     <li>AMERICAN PROFESSIONAL II STRATOCASTER®
                     </li>
@@ -36,28 +49,14 @@
                     </p>
                 </div>
             </section>
-
+            <!-- 
             <section class="itemCard container">
                 <div class="itemImages">
                     <figure>
                         <img src="images/guitar1.jpg" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                        <img src="images/guitar2.jpg" alt="">
+                        <img src="images/guitar3.jpg" alt="">
                     </figure>
-                    
-                    <div>
-
-                    <div id="gg">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    
-                    <div id="fb">
-                        <i class="fas fa-circle"></i>
-                    </div>
-                    <div id="ig">
-                        <i class="fas fa-circle"></i>>
-                    </div>
-                </div>
 
 
                 </div>
@@ -69,9 +68,9 @@
                     <p>Model #: 0113902719
                     </p>
                 </div>
-            </section>
+            </section> -->
 
-            <section class="itemCard container">
+            <!-- <section class="itemCard container">
                 <figure class="itemImages">
                     <img src="images/guitar1.jpg" alt="">
                     <img src="" alt="">
@@ -99,10 +98,11 @@
                     <p>Model #: 0113902719
                     </p>
                 </div>
-            </section>
+            </section> -->
         </article>
     </main>
 
     <script src="index.js"></script>
 </body>
+
 </html>
